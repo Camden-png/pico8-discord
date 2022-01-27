@@ -11,7 +11,7 @@ I will simplify the discord.p8 file soon...
 
 ## Usage:
 * Put your Discord bot token into settings.txt
-* Put discord.p8 into your Pico-8 cart folder location
+* Put discord.p8 into your Pico-8 cart folder
 * Put the Pico-8 application location into settings.txt
 * Put the Pico-8 cart folder location into settings.txt
 * In your terminal: *python pico-bot.py (python3 on Mac and Linux)*
