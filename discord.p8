@@ -13,12 +13,12 @@ player = {x = 16, y = 16}
 function _init()
   cls()
   -- send 1 to python
-		poke(0x4300, 1)
-		serial(0x805, 0x4300, 1)
-		-- reset memory
-		poke(0x4300, 0)
-		-- buffer
-		flip()
+  poke(0x4300, 1)
+  serial(0x805, 0x4300, 1)
+  -- reset memory
+  poke(0x4300, 0)
+  -- buffer
+  flip()
 end
 
 -- send python strings with
@@ -42,18 +42,18 @@ end
 function input()
   local string = ""
   local valid = true
-		serial(0x804, 0x4300, 16)
-		for i = 0,15 do
-		  local value = peek(0x4300+i)
-		  if value != 0 then
-		    local char = chr(value)
-		    string = string..char
-		  else
-		    if i == 0 then valid = false end
-		    break
-		  end
-		end
-		if valid then global = string end
+  serial(0x804, 0x4300, 16)
+  for i = 0,15 do
+    local value = peek(0x4300+i)
+    if value != 0 then
+      local char = chr(value)
+      string = string..char
+    else
+      if i == 0 then valid = false end
+      break
+    end
+  end
+  if valid then global = string end
 end
 
 function controls()
