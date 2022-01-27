@@ -10,9 +10,13 @@ A Discord bot that controls Pico-8. Please let me know if you make any games wit
 
 ## Usage:
 * Put your Discord bot token into settings.txt
+* Put discord.p8 into your Pico-8 cart folder location
 * Put the Pico-8 application location into settings.txt
 * Put the Pico-8 cart folder location into settings.txt
 * In your terminal: *python pico-bot.py (python3 on Mac and Linux)*
+
+## Example:
+![](Images/pico8-discord.gif)
 
 ## Support:
 * Windows :heavy_check_mark:
