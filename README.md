@@ -2,6 +2,7 @@
 
 ## Synopsis:
 A Discord bot that controls Pico-8. Please let me know if you make any games with this tool!
+I will simplify the discord.p8 file soon...
 
 ## Requirements:
 * [Python 3.7](https://www.python.org/)
